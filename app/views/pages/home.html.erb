@@ -1,0 +1,32 @@
+<div class="home-page-container">
+  <div class="home-header-container">
+
+     <script type="javascript" src="app/assets/javacsript/clock.js"> </script>
+
+    <div class="logo">
+      <h1>LOGO HERE</h1>
+      <img src="app/assets/images/yz-logo-first.png" alt="logo">
+    </div>
+
+      <p><%= Time.now %></p>
+
+    <div class="links-header">
+      <%= link_to "Know more about us", about_path, class: 'link' %>
+      <%= link_to "Meet our team", contact_path, class: 'link'  %>
+    </div>
+  </div>
+
+  <div class="home-body-container">
+
+
+      <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
