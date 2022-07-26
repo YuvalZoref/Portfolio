@@ -26,11 +26,16 @@
   }
 }
 .logo {
+
+  img {
+    height: 400px;
+    width: 420px;
+  }
   display: flex;
-  padding: 20px;
+  padding: 8px;
   margin: 5px;
-  border-color: black;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  // border-color: black;
+  // box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 
 .home-body-container {
