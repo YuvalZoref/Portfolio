@@ -9,6 +9,3 @@ import "channels"
 
 Rails.start()
 Turbolinks.start()
-
-
-import "../clock.js"
