@@ -1,21 +1,21 @@
 <div class="home-page-container">
-  <div class="home-header-container">
-
+  <div class="home-header-container  ">
     <div class="logo">Logo of some kind
     </div>
-
     <div class="links-header">
-      <%= link_to "Know more about us", about_path, class: 'link' %>
-      <%= link_to "Meet our team", contact_path, class: 'link'  %>
+      <%= link_to "About me", about_path, class: 'link' %>
+      <%= link_to "Contact me", contact_path, class: 'link'  %>
     </div>
   </div>
 
   <div class="home-body-container">
-
-
-
+    <%#= image_tag "photo-three.jpg" %>
+    <div class="footer">
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'imdb fa-2x'), 'https://www.imdb.com/name/nm9973363/?ref_=nv_sr_srsg_1', :target => "_blank" %></div>
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'instagram fa-2x'), 'https://www.instagram.com/quanna_l/', :target => "_blank" %></div>
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'twitter fa-2x'), 'https://twitter.com/quannaluo?lang=en-GB', :target => "_blank"%></div>
+      <div class='footer-icon'><%= link_to icon('fa-regular', 'comments fa-2x'), 'https://www.sueterryvoices.com/artist/quanna-luo-masterson', :target => "_blank"%></div>
+    </div>
   </div>
-  <div class="footer">
 
-  </div>
 </div>
