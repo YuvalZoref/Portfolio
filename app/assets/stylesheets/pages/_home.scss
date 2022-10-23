@@ -1,30 +1,25 @@
 body {
-  background-color: rgba(0, 0, 0, 0.964);
-  opacity: 0.9;
+  margin: 0px;
 }
 
 .home-page-container {
   background-image: url("photo-one.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
-  height: calc(100vh - 20px);
+  height: 100vh;
   overflow: hidden;
 }
 
 .home-header-container {
   display: flex;
   padding: 20px;
+  margin: 0px 15px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(224, 185, 185, 0);
-  // opacity: 0.8;
 }
 .links-header {
   display: flex;
   padding: 20px;
-  margin-right: 10px;
-  // flex-direction: column;
   line-height: 30px;
 
   .link {
@@ -40,7 +35,7 @@ body {
 }
 .logo {
   padding: 12px;
-  margin-left: 10px;
+  // margin-left: 10px;
   border-color: rgb(255, 255, 255);
   box-shadow: 3px 3px 5px rgb(255, 255, 255);
   border-radius: 50%;
@@ -52,39 +47,23 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   display: flex;
-  // margin: 20px;
   padding: 20px;
-  height: calc(100vh - 10px)
-
-  // img {
-  //   max-width: 100%;
-  //   max-height: 100%;
-  //   object-fit: contain;
-  //   opacity: 0.9;
-  // }
-
+  height: calc(100vh - 180px)
 }
 
 .footer {
-  // height: 30px;
-  // padding: 20px;
-  margin-bottom: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(224, 185, 185, 0);
 
   .footer-icon {
     padding: 10px;
     margin: 0px 30px;
-    // opacity: 0.9;
-
     i {
-      color: rgb(255, 255, 255);
+      color: rgba(255, 255, 255, 0.93);
     }
-    }
-
-    .footer-icon:hover {
+    i:hover {
       opacity: 0.8;
+    }
     }
   }
