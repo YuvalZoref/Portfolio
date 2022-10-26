@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+
+
+  .footer-left {
+    display: flex;
+    .footer-icon {
+      margin: 0px 20px;
+      i {
+        color: rgba(170, 75, 52, 0.93);
+      }
+      i:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .footer-right {
+    margin-left: 20px;
+    display: flex;
+
+    .link-footer {
+      font-family: 'Source Code Pro', monospace;
+      text-decoration: none;
+      color: black;
+    }
+    .link-footer:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+// @media (min-width: 100px) and (max-width: 600px) {
+// }

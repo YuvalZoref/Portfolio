@@ -1,2 +1,64 @@
-<h1>Our first view 🚀</h1>
-<%= link_to "Back to homepage", root_path, class: 'link'  %>
+<div class="header">
+  <h1>Page about me</h1>
+  <%= link_to "Back to homepage", root_path, class: 'link-to-home'  %>
+</div>
+
+<div class="about-page">
+  <div class="about-section first">
+    <div class="about-section-picture">
+      <img src="<%= asset_path('photo-three.jpg') %>">
+    </div>
+    <div class="about-section-text">
+      <div class="text-box first"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque beatae cum repellendus quae, minus sequi consequatur rem dolorem omnis a eligendi aspernatur ad aut fuga voluptates corrupti dolorum provident et?
+      </div>
+    </div>
+  </div>
+  <div class="about-section second">
+    <div class="about-section-text">
+      <div class="text-box second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sit dicta reiciendis, provident doloribus blanditiis incidunt rerum pariatur laudantium nostrum laborum voluptatibus sint porro autem molestiae eligendi enim ipsam eaque.
+      </div>
+    </div>
+    <div class="about-section-picture">
+      <img src="<%= asset_path('photo-six.jpg') %>">
+    </div>
+  </div>
+  <div class="about-section third">
+    <div class="about-section-picture">
+      <img src="<%= asset_path('photo-two.jpg') %>">
+    </div>
+    <div class="about-section-text">
+      <div class="text-box third"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sit dicta reiciendis, provident doloribus blanditiis incidunt rerum pariatur laudantium nostrum laborum voluptatibus sint porro autem molestiae eligendi enim ipsam eaque.
+      </div>
+    </div>
+  </div>
+  <div class="about-section fourth">
+    <div class="about-section-text">
+      <div class="text-box fourth"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequuntur? Perferendis, aperiam eum consequuntur, quisquam aliquam, corporis velit vel reiciendis sequi soluta adipisci reprehenderit quod debitis nam odio inventore? Cum!
+      </div>
+    </div>
+    <div class="about-section-picture">
+      <img src="<%= asset_path('photo-five.jpg') %>">
+    </div>
+  </div>
+  <div class="about-section fifth">
+    <div class="about-section-picture">
+      <img src="<%= asset_path('photo-four.jpg') %>">
+    </div>
+    <div class="about-section-text">
+      <div class="text-box fifth"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sit dicta reiciendis, provident doloribus blanditiis incidunt rerum pariatur laudantium nostrum laborum voluptatibus sint porro autem molestiae eligendi enim ipsam eaque.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-left">
+    <div class='footer-icon'><%= link_to icon('fa-brands', 'imdb fa-2x'), 'https://www.imdb.com/name/nm9973363/?ref_=nv_sr_srsg_1', :target => "_blank" %></div>
+    <div class='footer-icon'><%= link_to icon('fa-brands', 'instagram fa-2x'), 'https://www.instagram.com/quanna_l/', :target => "_blank" %></div>
+    <div class='footer-icon'><%= link_to icon('fa-brands', 'twitter fa-2x'), 'https://twitter.com/quannaluo?lang=en-GB', :target => "_blank"%></div>
+    <div class='footer-icon'><%= link_to icon('fa-regular', 'comments fa-2x'), 'https://www.sueterryvoices.com/artist/quanna-luo-masterson', :target => "_blank"%></div>
+  </div>
+  <div class="footer-right">
+<%= link_to "Back to the top", about_path, class: 'link-footer'  %>
+  </div>
+</div>

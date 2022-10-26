@@ -1,0 +1,111 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(153, 119, 77, 0.621);
+  .about-section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text-box {
+      margin: 20px;
+      padding: 6px;
+      height: 90%;
+      width: 90%;
+      background-color: white;
+      border-radius: 4px;
+      font-family: 'Shadows Into Light', cursive;
+    }
+  }
+  .about-section-picture {
+    img {
+      max-width: 100%;
+      max-height: 600px;
+      object-fit: fill;
+      border-radius: 4px;
+    }
+  }
+}
+
+.about-section.second {
+  background-color: rgba(94, 74, 49, 0.648);
+}
+.about-section.fourth {
+  background-color: rgb(94, 74, 49);
+}
+
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 600px) {
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+  .about-section.third {
+    padding-left: 10px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 600px) and (max-width: 990px) {
+  .about-page {
+    .about-section.second {
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      .text-box {
+        width: 95%;
+      }
+    }
+    .about-section.fourth {
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      .text-box {
+        width: 95%;
+
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .about-page {
+    .about-section.second {
+      justify-content: flex-end;
+      padding: 10px;
+    }
+    .about-section.fourth {
+      justify-content: flex-end;
+      padding: 10px;
+    }
+
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .about-page {
+    .about-section.second {
+      justify-content: flex-end;
+    }
+    .about-section.fourth {
+      justify-content: flex-end;
+    }
+  }
+}
+
+  // background: url("stars.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
