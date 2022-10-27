@@ -3,8 +3,10 @@ body {
 }
 
 .home-page-container {
-  background-image: url("photo-one.jpg");
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("photo-one.jpg");
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -12,31 +14,29 @@ body {
 
 .home-header-container {
   display: flex;
-  padding: 20px;
-  margin: 0px 15px;
+  padding: 8px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .links-header {
   display: flex;
-  padding: 20px;
+  padding-bottom: 20px;
   line-height: 30px;
 
   .link {
     margin: 10px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.688);
     font-size: 18px;
     font-family: 'Source Code Pro', monospace;
  }
-
   .link:hover {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 .logo {
-  padding: 12px;
-  // margin-left: 10px;
+  margin: 10px;
+  padding: 10px;
   border-color: rgb(255, 255, 255);
   box-shadow: 3px 3px 5px rgb(255, 255, 255);
   border-radius: 50%;
@@ -57,15 +57,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 6px;
 
   .footer-icon {
     padding: 10px;
-    margin: 0px 30px;
+    margin: 0px 10px;
     i {
-      color: rgba(255, 255, 255, 0.93);
+      color: rgba(255, 255, 255, 0.637);
     }
     i:hover {
-      opacity: 0.8;
+      opacity: 0.6;
     }
     }
+  }
+
+
+
+  @media (min-width: 100px) and (max-width: 600px) {
+
+  }
+
+  @media (min-width: 600px) and (max-width: 990px) {
+
+  }
+
+  @media (min-width: 992px) {
+
+
   }

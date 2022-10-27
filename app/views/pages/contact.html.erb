@@ -1,1 +1,40 @@
-<%= link_to "Back to homepage", root_path, class: 'link'  %>
+<div class="portfolio-container">
+  <div class="header">
+    <div class="title">
+      <h1>portfolio page</h1>
+    </div>
+    <div class="header-links">
+      <%= link_to "About me", about_path, class: 'link-to-about' %>
+      <%= link_to "Homepage", root_path, class: 'link-to-home'  %>
+    </div>
+  </div>
+  <div class="portfolio-page-container">
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+   <h1>Hello</h1>
+  </div>
+
+
+  <div class="footer">
+    <div class="footer-left">
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'imdb fa-2x'), 'https://www.imdb.com/name/nm9973363/?ref_=nv_sr_srsg_1', :target => "_blank" %></div>
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'instagram fa-2x'), 'https://www.instagram.com/quanna_l/', :target => "_blank" %></div>
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'twitter fa-2x'), 'https://twitter.com/quannaluo?lang=en-GB', :target => "_blank"%></div>
+      <div class='footer-icon'><%= link_to icon('fa-regular', 'comments fa-2x'), 'https://www.sueterryvoices.com/artist/quanna-luo-masterson', :target => "_blank"%></div>
+    </div>
+    <div class="footer-right">
+  <%= link_to "Back to the top", contact_path, class: 'link-footer'  %>
+    </div>
+  </div>
+</div>

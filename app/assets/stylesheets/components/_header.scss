@@ -10,13 +10,39 @@
     font-family: 'Source Code Pro', monospace;
   }
 
-  .link-to-home {
-    text-decoration: none;
-    color: black;
-    font-family: 'Source Code Pro', monospace;
+  .header-links {
+
+    .link-to-home {
+      text-decoration: none;
+      color: black;
+      font-family: 'Source Code Pro', monospace;
+      margin-left: 10px;
+      border-left: 1px solid grey;
+      padding-left: 10px;
+    }
+    .link-to-about {
+      text-decoration: none;
+      color: black;
+      font-family: 'Source Code Pro', monospace;
+    }
+    .link-to-portfolio {
+      text-decoration: none;
+      color: black;
+      font-family: 'Source Code Pro', monospace;
+    }
   }
 
+  .link-to-portfolio:hover {
+    opacity: 0.6;
+  }
+  .link-to-about:hover {
+    opacity: 0.6;
+  }
   .link-to-home:hover {
     opacity: 0.6;
   }
 }
+
+// @media (min-width: 100px) and (max-width: 600px) {
+
+// }

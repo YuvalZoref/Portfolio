@@ -1,4 +1,11 @@
-.about-page {
+.about-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.about-page-main {
   display: flex;
   flex-direction: column;
 }
@@ -7,7 +14,8 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-  // border: 1px solid white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.453);
+  background-color: #c6c6c657;
   .about-section-text {
     display: flex;
     justify-content: center;
@@ -16,7 +24,7 @@
       margin: 20px;
       padding: 6px;
       height: 90%;
-      width: 90%;
+      width: 95%;
       background-color: white;
       border-radius: 4px;
       font-family: 'Shadows Into Light', cursive;
@@ -27,46 +35,27 @@
       max-width: 100%;
       max-height: 700px;
       object-fit: fill;
-      border-radius: 4px;
+      border-radius: 6px;
+      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.453);
     }
   }
 }
 
-.about-section.first {
-  background-color: #ffafbc57;
-  .text-box {
+// .about-section.first {
 
-    box-shadow: 3px 3px 5px white;
-  }
-}
-.about-section.second {
-  background-color: #f4c5a969;
-  .text-box {
+// }
+// .about-section.second {
 
-    box-shadow: 3px 3px 5px white;
-  }
-}
-.about-section.third {
-  background-color: #ffafbc57;
-  .text-box {
+// }
+// .about-section.third {
 
-    box-shadow: 3px 3px 5px white;
-  }
-}
-.about-section.fourth {
-  background-color: #f4c5a969;
-  .text-box {
+// }
+// .about-section.fourth {
 
-    box-shadow: 3px 3px 5px white;
-  }
-}
-.about-section.fifth {
-  background-color: #ffafbc57;
-  .text-box {
+// }
+// .about-section.fifth {
 
-    box-shadow: 3px 3px 5px white;
-  }
-}
+// }
 
 
 
@@ -78,6 +67,7 @@
     flex-direction: column;
     padding: 10px;
     align-items: center;
+
   }
 
   .about-section.third {
@@ -123,18 +113,6 @@
   }
 
 }
-
-// Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-//   .about-page {
-//     .about-section.second {
-//       justify-content: flex-end;
-//     }
-//     .about-section.fourth {
-//       justify-content: flex-end;
-//     }
-//   }
-// }
 
   // background: url("stars.jpg");
   // background-repeat: no-repeat;
