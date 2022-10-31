@@ -9,20 +9,17 @@
     </div>
   </div>
   <div class="portfolio-page-container">
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
-   <h1>Hello</h1>
+    <div class="video-box">
+      <h1>Here is my Showreel</h1>
+      <%# <%= video_tag "#", :controls => true %>
+      <video class='showreel' src="#" controls></video>
+    </div>
+    <div class="audio-box">
+      <h1>Here is my voice reel</h1>
+      <audio class='voice-reel' src="#" controls></audio>
+      <%# <%= audio_tag "#", :controls => true %>
+    </div>
+
   </div>
 
 
@@ -34,7 +31,7 @@
       <div class='footer-icon'><%= link_to icon('fa-regular', 'comments fa-2x'), 'https://www.sueterryvoices.com/artist/quanna-luo-masterson', :target => "_blank"%></div>
     </div>
     <div class="footer-right">
-  <%= link_to "Back to the top", contact_path, class: 'link-footer'  %>
+  <%= link_to "Back to the top", portfolio_path, class: 'link-footer'  %>
     </div>
   </div>
 </div>

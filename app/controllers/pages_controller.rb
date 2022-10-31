@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def contact
+  def portfolio
   end
 
   def home

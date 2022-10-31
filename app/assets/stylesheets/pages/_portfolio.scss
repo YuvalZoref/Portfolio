@@ -1,0 +1,66 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.audio-box {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .voice-reel {
+    width: 40%;
+    padding: 20px;
+  }
+}
+.video-box {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  .showreel {
+    width: 40%;
+  }
+}
+
+
+@media (min-width: 100px) and (max-width: 900px) {
+  .video-box {
+    .showreel {
+      width: 90%;
+
+    }
+  }
+  .audio-box {
+    .voice-reel {
+      width: 90%;
+
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  // .video-box {
+  //   .showreel {
+  //     width: 90%;
+  //   }
+  // }
+  // .audio-box {
+  //   .voice-reel {
+  //     width: 90%;
+  //   }
+  // }
+}
