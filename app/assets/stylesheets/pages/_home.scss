@@ -7,7 +7,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("photo-one.jpg");
+  background: url("photo-one.jpg"), url("books.jpg");
+  background-blend-mode: hard-light;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -33,8 +34,8 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 .title-name h1 {
-  margin: 10px 0px;
-  padding: 15px;
+  margin: 6px 0px;
+  padding: 10px;
 }
 
 .link-buttons {
@@ -42,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 
   .link {
     margin: 10px 15px;
@@ -61,7 +62,7 @@ body {
       height: 100%;
       position: absolute;
       z-index: -1;
-      border: 2px solid rgba(255, 255, 255, 0.386);
+      border: 2px solid rgba(255, 255, 255, 0.538);
       transition: all .25s ease-out;
       margin-left: 6px;
     }
@@ -93,7 +94,7 @@ body {
   @media (min-width: 100px) and (max-width: 450px) {
     .home-page-container {
       height: calc(100vh - 16px);
-      border: 8px solid rgba(255, 255, 255, 0.464);
+      border: 8px solid rgba(255, 255, 255, 0.296);
     }
     .home-main-container {
       justify-content: center;
