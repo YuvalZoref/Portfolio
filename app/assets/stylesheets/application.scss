@@ -13,10 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+//  @import "bootstrap-sprockets";
+//  @import "bootstrap";
+
  @import "components/index";
  @import "pages/index";
  @import "font-awesome";
  @import "config/fonts";
+
 
 
 //  @media (max-width: 960px) {

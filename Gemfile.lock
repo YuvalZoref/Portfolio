@@ -183,7 +183,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  font-awesome-sass (~> 6.2.0)
+  font-awesome-sass
   geocoder
   jbuilder (~> 2.7)
   listen (~> 3.3)

@@ -4,63 +4,39 @@
   justify-content: space-between;
   height: 100vh;
 }
-.audio-box {
-  background-color: rgba(255, 192, 203, 0.71);
+.portfolio-page-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    font-family: 'Shadows Into Light', cursive;
-  }
-
-  .voice-reel {
-    width: 60%;
-    padding: 20px;
-  }
+  background-color: black;
+  background-image: url("lanterns.jpg");
+  background-blend-mode: luminosity;
+  margin: 10px 0px;
 }
+
 .video-box {
-  background-color: rgba(255, 192, 203, 0.622);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin: 20px;
   h1 {
     font-family: 'Shadows Into Light', cursive;
   }
-
   .showreel {
     width: 60%;
+    margin-top: 20px;
+    border-radius: 8px;
   }
 }
-
 
 @media (min-width: 100px) and (max-width: 900px) {
   .video-box {
     .showreel {
       width: 90%;
-
-    }
-  }
-  .audio-box {
-    .voice-reel {
-      width: 90%;
-
     }
   }
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
-  // .video-box {
-  //   .showreel {
-  //     width: 90%;
-  //   }
-  // }
-  // .audio-box {
-  //   .voice-reel {
-  //     width: 90%;
-  //   }
-  // }
-}
+// @media (min-width: 600px) and (max-width: 1000px) {
+
+// }
