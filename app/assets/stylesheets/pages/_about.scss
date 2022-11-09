@@ -14,19 +14,21 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.453);
-  background-color: #c6c6c657;
+  background-color: white;
+  // box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.453);
+  // background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
   .about-section-text {
     display: flex;
     justify-content: center;
     align-items: center;
     .text-box {
+      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.453);
       margin: 20px;
       padding: 6px;
       height: 90%;
       width: 95%;
-      background-color: white;
-      border-radius: 4px;
+      background-color: rgb(245, 245, 245);
+      border-radius: 12px;
       font-family: 'Shadows Into Light', cursive;
     }
   }
@@ -41,23 +43,12 @@
   }
 }
 
-// .about-section.first {
-
-// }
-// .about-section.second {
-
-// }
-// .about-section.third {
-
-// }
-// .about-section.fourth {
-
-// }
-// .about-section.fifth {
-
-// }
-
-
+.about-section.first {
+  border-top: 1px solid rgba(0, 0, 0, 0.304);
+}
+.about-section.fifth {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.304);
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 600px) {

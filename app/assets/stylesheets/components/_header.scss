@@ -3,11 +3,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background-color: rgb(255, 255, 255);
-  height: 40px;
-  h1 {
+  height: 30px;
+  .logo {
+    display: flex;
+    justify-content: center;
     font-family: 'Source Code Pro', monospace;
+    span:nth-child(1) {
+      color: red;
+    }
+    // span:nth-child(2) {
+
+    // }
   }
 
   .header-links {

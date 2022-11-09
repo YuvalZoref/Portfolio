@@ -9,6 +9,9 @@ body {
   justify-content: center;
   background: url("photo-one.jpg"), url("books.jpg");
   background-blend-mode: hard-light;
+  // box-shadow: inset 0px 0px 100px rgba(0,0,20,1);
+  // -webkit-linear-gradient: (top, rgba(255,145,0,0.2) 0%,rgba(255,230,48,0.2) 60%);
+  // -webkit-linear-gradient:(20deg, rgba(255,0,0,0.5) 0%,rgba(255,0,0,0) 35%);
   background-size: cover;
   height: 100vh;
   overflow: hidden;

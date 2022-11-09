@@ -7,9 +7,9 @@
 .portfolio-page-container {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  background-image: url("lanterns.jpg");
-  background-blend-mode: luminosity;
+  // background-color: black;
+  background-image: url("vintage-cinema.jpg"), url("lanterns.jpg");
+  background-blend-mode: exclusion;
   margin: 10px 0px;
 }
 
@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: 100px) and (max-width: 900px) {
+@media (min-width: 100px) and (max-width: 1000px) {
   .video-box {
     .showreel {
       width: 90%;
