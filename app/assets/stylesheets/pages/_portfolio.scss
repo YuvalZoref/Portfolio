@@ -23,16 +23,49 @@
     font-family: 'Shadows Into Light', cursive;
   }
   .showreel {
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
     border-radius: 8px;
   }
 }
 
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .photo-box {
+    opacity: 0.9;
+    // border-radius: 6px;
+    margin: 20px;
+    height: 225px;
+    width: 400px;
+    background-image: url("logo.png");
+    // background-blend-mode: multiply;
+    // background-repeat: no-repeat;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+  }
+}
+
+
+
 @media (min-width: 100px) and (max-width: 1000px) {
   .video-box {
     .showreel {
-      width: 90%;
+      width: 95%;
+    }
+  }
+  .photos-container {
+    .photo-box {
+      // height: 100px;
+      width: 500px;
     }
   }
 }
