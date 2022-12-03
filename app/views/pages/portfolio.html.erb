@@ -2,12 +2,12 @@
   <div class="header">
     <div class="logo">
       <h1>
-        <span>Q</span>
-        <span>uanna</span>
+        <span>Quanna</span>
       </h1>
     </div>
     <div class="header-links">
       <%= link_to "About me", about_path, class: 'link-to-about' %>
+      <%= link_to "Contact", contact_path, class: 'link-to-contact'  %>
       <%= link_to "Homepage", root_path, class: 'link-to-home'  %>
     </div>
   </div>
@@ -20,12 +20,11 @@
       <div class="photo-box">
       </div>
     </div> %>
-    <div class="video-box">
-      <video class='showreel' src="" controls></video>
+    <div class="video-box" style="padding:56.25% 0 0 0;position:relative;">
+      <%# <video class='showreel' src="https://player.vimeo.com/video/759278307?h=d17e02542a" controls></video> %>
+      <iframe src="https://player.vimeo.com/video/759278307?h=d17e02542a" style="position:absolute;top:0;width:90%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <%# <script src="https://player.vimeo.com/api/player.js"></script> %>
     </div>
-      <div class="audio-box">
-        <audio class='voice-reel' src="#" controls></audio>
-      </div>
     <div class="quote-container-portfolio">
       <h1>
         <span>There</span>
@@ -60,6 +59,18 @@
         <span>begin.</span>
       </h1>
     </div>
+      <div class="audio-box">
+        <p class='audio-title'>English documentary</p>
+          <audio class="voice-reel" src="<%= audio_path('/app/assets/audios/english-documentary.mp3') %>" controls type="audio/mp3"></audio>
+        <p class='audio-title'>Audiobook - Where is my home</p>
+          <audio class="voice-reel" src="<%= audio_path('/app/assets/audios/audiobook-where-is-my-home.mp3') %>" controls type="audio/mp3"></audio>
+        <p class='audio-title'>English commercial</p>
+          <audio class="voice-reel" src="<%= audio_path('/app/assets/audios/english-commercial.mp3') %>" controls type="audio/mp3"></audio>
+        <p class='audio-title'>English corporate read</p>
+          <audio class="voice-reel" src="<%= audio_path('/app/assets/audios/english-corporate-read.mp3') %>" controls type="audio/mp3"></audio>
+        <p class='audio-title'>Mandarin commercial</p>
+          <audio class="voice-reel" src="<%= audio_path('/app/assets/audios/mandarin-speaking-commercial.mp3') %>" controls type="audio/mp3"></audio>
+      </div>
     <div class="photos-container">
       <div class="photo-box">
       </div>
@@ -87,7 +98,7 @@
       <div class='footer-icon'><%= link_to icon('fa-regular', 'comments fa-2x'), 'https://www.sueterryvoices.com/artist/quanna-luo-masterson', :target => "_blank"%></div>
     </div>
     <div class="footer-right">
-  <%= link_to "Back to the top", portfolio_path, class: 'link-footer'  %>
+  <%# <%= link_to "Back to the top", portfolio_path, class: 'link-footer'  %>
     </div>
   </div>
 </div>

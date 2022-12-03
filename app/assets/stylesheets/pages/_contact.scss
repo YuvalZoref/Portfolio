@@ -1,0 +1,17 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.contact-page-container {
+  .contact-form-title {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+  }
+
+}

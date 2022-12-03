@@ -1,0 +1,45 @@
+<div class="contact-container">
+  <div class="header">
+    <div class="logo">
+      <h1>
+        <span>Quanna</span>
+      </h1>
+    </div>
+    <div class="header-links">
+      <%= link_to "About me", about_path, class: 'link-to-about' %>
+      <%= link_to "portfolio", portfolio_path, class: 'link-to-portfolio'  %>
+      <%= link_to "Homepage", root_path, class: 'link-to-home'  %>
+    </div>
+  </div>
+
+
+  <div class="contact-page-container">
+    <h2 class='contact-form-title'>Contact Quanna</h2>
+    <div class="contact-form">
+      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      Name:<br>
+      <input type="text" name="name"><br>
+      E-mail:<br>
+      <input type="text" name="mail"><br>
+      Comment:<br>
+      <input type="text" name="comment" size="50"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      </form>
+    </div>
+  </div>
+
+
+
+    <div class="footer">
+    <div class="footer-left">
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'imdb fa-2x'), 'https://www.imdb.com/name/nm9973363/?ref_=nv_sr_srsg_1', :target => "_blank" %></div>
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'instagram fa-2x'), 'https://www.instagram.com/quanna_l/', :target => "_blank" %></div>
+      <div class='footer-icon'><%= link_to icon('fa-brands', 'twitter fa-2x'), 'https://twitter.com/quannaluo?lang=en-GB', :target => "_blank"%></div>
+      <div class='footer-icon'><%= link_to icon('fa-regular', 'comments fa-2x'), 'https://www.sueterryvoices.com/artist/quanna-luo-masterson', :target => "_blank"%></div>
+    </div>
+    <div class="footer-right">
+  <%# <%= link_to "Back to the top", contact_path, class: 'link-footer'  %>
+    </div>
+  </div>
+</div>

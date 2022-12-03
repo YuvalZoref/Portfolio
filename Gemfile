@@ -7,6 +7,11 @@ ruby '3.0.3'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor'
+end
+# gem 'mail_form'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets

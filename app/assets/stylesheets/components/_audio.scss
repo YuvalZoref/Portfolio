@@ -1,15 +1,18 @@
 .audio-box {
-  // margin-top: 20px;
+  border-radius: 10px;
+  margin: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  h1 {
+  .audio-title {
     font-family: 'Shadows Into Light', cursive;
+    font-size: 18px;
+    color: white;
   }
   .voice-reel {
-    width: 60%;
+    width: 70%;
     padding: 6px;
     margin: 8px 8px 20px 8px;
   }

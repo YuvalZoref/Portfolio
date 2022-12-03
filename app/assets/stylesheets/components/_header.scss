@@ -9,34 +9,41 @@
   .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Source Code Pro', monospace;
+
     span:nth-child(1) {
       color: red;
     }
-    // span:nth-child(2) {
-
-    // }
   }
 
   .header-links {
+    display: flex;
+    align-items: center;
 
     .link-to-home {
       text-decoration: none;
       color: black;
       font-family: 'Source Code Pro', monospace;
-      margin-left: 10px;
-      border-left: 1px solid grey;
-      padding-left: 10px;
+      margin: 0px 10px;
     }
     .link-to-about {
       text-decoration: none;
       color: black;
       font-family: 'Source Code Pro', monospace;
+      margin: 0px 10px;
     }
     .link-to-portfolio {
       text-decoration: none;
       color: black;
       font-family: 'Source Code Pro', monospace;
+      margin: 0px 10px;
+    }
+    .link-to-contact {
+      text-decoration: none;
+      color: black;
+      font-family: 'Source Code Pro', monospace;
+      margin: 0px 10px;
     }
   }
 
@@ -49,8 +56,13 @@
   .link-to-home:hover {
     opacity: 0.6;
   }
+  .link-to-contact:hover {
+    opacity: 0.6;
+  }
 }
 
-// @media (min-width: 100px) and (max-width: 600px) {
-
-// }
+@media (min-width: 100px) and (max-width: 600px) {
+  .logo {
+    margin-right: 20px;
+  }
+}
