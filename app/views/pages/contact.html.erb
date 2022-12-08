@@ -14,19 +14,31 @@
 
 
   <div class="contact-page-container">
-    <h2 class='contact-form-title'>Contact Quanna</h2>
-    <div class="contact-form">
-      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-      Name:<br>
-      <input type="text" name="name"><br>
-      E-mail:<br>
-      <input type="text" name="mail"><br>
-      Comment:<br>
-      <input type="text" name="comment" size="50"><br><br>
-      <input type="submit" value="Send">
-      <input type="reset" value="Reset">
-      </form>
+
+    <h2 class='contact-form-title'>Contact me</h2>
+
+    <div class="form-container">
+      <div class="contact-form">
+        <form class='form' action="mailto:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <div class="form-name">
+          <input class='form-name-item first' type="text" name="first-name" placeholder='First'><br>
+          <input class='form-name-item second' type="text" name="last-name" placeholder='Last'><br>
+        </div>
+        E-mail:<br>
+        <input class='form-email' type="text" name="email" placeholder='example@email.com'><br>
+        Message:<br>
+        <input class='form-message' class='form-name' type="text" name="message" size="50" placeholder='Your message here ...'>
+        <br><br>
+        <input class='submit-btn' type="submit" value="Send">
+        <input class='reset-btn' type="reset" value="Reset">
+        </form>
+      </div>
+      <div class='picture-form-container'>
+        <img class="picture-form" src="<%= asset_path('q3.jpg') %>">
+      </div>
     </div>
+
   </div>
 
 

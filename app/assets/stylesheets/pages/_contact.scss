@@ -5,13 +5,109 @@
   height: 100vh;
 }
 .contact-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
   .contact-form-title {
     display: flex;
     justify-content: center;
+    font-size: 36px;
+    font-family: 'Libre Baskerville', serif;
   }
-  .contact-form {
+  .form-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
   }
 
+  .contact-form {
+    margin: 10px;
+    .form {
+      margin: 30px;
+      // width: 500px;
+    }
+    .form-name {
+      display: flex;
+      .form-name-item {
+        font-family: 'Libre Baskerville', serif;
+        width: 100%;
+        padding: 12px;
+        margin: 6px 0 4px;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        color: #000;
+        font-size: 18px;
+        line-height: normal;
+        box-sizing: border-box;
+        border-radius: 2px;
+      }
+    }
+    .form-name-item.first {
+      margin-right: 6px;
+    }
+
+    .form-email {
+      font-family: 'Libre Baskerville', serif;
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0 4px;
+      border: 1px solid #ccc;
+      background: #fafafa;
+      color: #000;
+      font-size: 18px;
+      line-height: normal;
+      box-sizing: border-box;
+      border-radius: 2px;
+      }
+    .form-message {
+      font-family: 'Libre Baskerville', serif;
+      width: 100%;
+      overflow: scroll;
+      padding: 12px;
+      margin: 6px 0 4px;
+      border: 1px solid #ccc;
+      background: #fafafa;
+      color: #000;
+      font-size: 18px;
+      line-height: normal;
+      box-sizing: border-box;
+      border-radius: 2px;
+    }
+    .submit-btn {
+      font-family: 'Libre Baskerville', serif;
+      margin-right: 4px;
+      height: 30px;
+      width: 50px;
+    }
+    .reset-btn {
+      font-family: 'Libre Baskerville', serif;
+      margin-left: 4px;
+      height: 30px;
+      width: 50px;
+    }
+  }
+
+  .picture-form-container {
+    display: flex;
+    justify-content: center;
+    .picture-form{
+      margin: 20px;
+      max-width: 95%;
+      max-height: 600px;
+      object-fit: fill;
+      border-radius: 4px;
+      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.453);
+    }
+  }
+
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
